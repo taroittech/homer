@@ -1,2 +1,2 @@
 # homer
-My Homer dashboad
+My Homer dashboard
