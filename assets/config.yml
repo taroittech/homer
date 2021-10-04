@@ -1,0 +1,152 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/icons for icons options
+
+title: "Raspberry Pi 3 Server"
+subtitle: "Pi-Hosted"
+logo: "logo.png"
+# icon: "fas fa-skull-crossbones" # Optional icon
+
+header: true
+footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # set false if you want to hide it.
+
+# Optional theme customization
+theme: default
+colors:
+  light:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#f5f5f5"
+    card-background: "#ffffff"
+    text: "#363636"
+    text-header: "#ffffff"
+    text-title: "#303030"
+    text-subtitle: "#424242"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link-hover: "#363636"
+  dark:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#131313"
+    card-background: "#2b2b2b"
+    text: "#eaeaea"
+    text-header: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#f5f5f5"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link-hover: "#ffdd57"
+
+# Optional message
+#message:
+#  #url: https://b4bz.io
+#  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+#  title: "Demo !"
+#  icon: "fa fa-grin"
+#  content: "This is a dummy homepage demo. <br /> Find more information on <a href='https://github.com/bastienwirtz/homer'>github.com/bastienwirtz/homer</a>"
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: "Contribute"
+    icon: "fab fa-github"
+    url: "https://github.com/bastienwirtz/homer"
+    target: "_blank" # optional html a tag target attribute
+  - name: "Wiki"
+    icon: "fas fa-book"
+    url: "https://www.wikipedia.org/"
+  # this will link to a second homer page that will load config from additionnal-page.yml and keep default config values as in config.yml file
+  # see url field and assets/additionnal-page.yml.dist used in this example:
+  - name: "another page!"
+    icon: "fas fa-file-alt"
+    url: "#additionnal-page" 
+
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+services:
+  - name: "Applications"
+    icon: "fas fa-desktop"
+    items:
+      - name: "Shell In A Box"
+        logo: "assets/tools/terminal.png"
+        subtitle: "Web ssh Raspberry Pi 3 Server"
+        tag: "app"
+        url: "https://192.168.0.23:4200/"
+        target: "_blank" # optional html a tag target attribute
+      - name: "File Browser"
+        logo: "assets/tools/filebrowser.png"
+        subtitle: "Web file browser for Raspberry Pi 3 server"
+        tag: "app"
+        url: "http://192.168.0.23:8082/"
+        target: "_blank"
+      - name: "Heimdall"
+        logo: "assets/tools/heimdall-logo.png"
+        subtitle: "Raspberry Pi 3 Dashboard"
+        tag: "app"
+        url: "http://192.168.0.23:9001/"
+        target: "_blank"
+      - name: "Lazy Librarian"
+        logo: "assets/tools/lazylibrarian-logo.png"
+        subtitle: "Follow authors and grab metadata"
+        tag: "app"
+        url: "http://192.168.0.23:5299/"
+        target: "_blank"
+      - name: "YoutubeDL-Material"
+        logo: "assets/tools/youtubedl-logo.png"
+        subtitle: "Donwload videos and audio from YouTube.com"
+        tag: "app"
+        url: "http://192.168.0.23:17442/"
+        target: "_blank"
+  - name: "Servers"
+    icon: "fas fa-server"
+    items:
+      - name: "Portainer"
+        logo: "assets/tools/portainer.svg"
+        subtitle: "Docker"
+        tag: "app"
+        url: "http://192.168.0.23:9000/"
+        target: "_blank"
+      - name: "Proxmox"
+        logo: "assets/tools/proxmox-logo.png"
+        subtitle: "Proxmox Virtual Server"
+        tag: "server"
+        url: "https://192.168.0.21:8006"
+        target: "_blank"
+      - name: "pfSense"
+        logo: "assets/tools/pfsense-logo.png"
+        subtitle: "Virtual Router in Proxmox"
+        tag: "server"
+        url: "http://192.168.0.111"
+        target: "_blank"
+      - name: "OpenMediaVault"
+        logo: "assets/tools/openmediavault-logo1.png"
+        subtitle: "File and Media Server"
+        tag: "server"
+        url: "http://192.168.0.20/"
+        target: "_blank" 
+  - name: "Devices"
+    icon: "fas fa-network-wired"
+    items:
+      - name: "Telewell TW-EAV510"
+        logo: "assets/tools/telewell-logo.png"
+        subtitle: "ISP Router"
+        tag: "device"
+        url: "http://192.168.0.254"
+        target: "_blank"
+  - name: "Cloud"
+    icon: "fas fa-cloud"
+    items:
+      - name: "Linode"
+        logo: "assets/tools/linode-logo.png"
+        subtitle: "Cloud Hosting"
+        tag: "service"
+        url: "https://login.linode.com/login"
+        target: "_blank"
+      - name: "Azure"
+        logo: "assets/tools/azure-logo2.png"
+        subtitle: "Microsoft Azure Portal"
+        tag: "service"
+        url: "https://portal.azure.com/#home"
+        target: "_blank"
