@@ -1,2 +1,2 @@
 # homer
-My Homer dashboar
+My Homer dashboad
